@@ -59,7 +59,7 @@ def create_mask(shape, img):
 	return mask
 
 def get_bounding_rect(img):
-	cnts = cv2.findContours(img.copy(), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)[1]
+	cnts = cv2.findContours(img.copy(), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)[0]
 	boundingBoxes = contours.sort_contours(cnts, method='left-to-right')[1]
 	
 	x0, y0 = boundingBoxes[0][0], boundingBoxes[0][1]
