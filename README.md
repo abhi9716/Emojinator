@@ -1,3 +1,3 @@
-# Emojifier
+# Emojinator
 
 ![](output.gif)
