@@ -1,1 +1,3 @@
 # Emojifier
+
+![](output.gif)
